@@ -1,0 +1,243 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SubTitleShifter.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SubTitleShifter.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 196, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SubTitleShifter"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,8,21,20
+    LTEXT           "SubTitleShifter, Version 1.0",IDC_STATIC,41,9,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009.",IDC_STATIC,41,19,114,8
+    DEFPUSHBUTTON   "OK",IDOK,139,33,50,14,WS_GROUP
+    LTEXT           "Author:  A.H. Sudantha Athauda",IDC_STATIC_AUTHOR,16,38,105,8
+END
+
+IDD_SUBTITLESHIFTER_DIALOG DIALOGEX 0, 0, 400, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SubTitleShifter"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,343,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,343,65,50,14
+    PUSHBUTTON      "...",IDC_BUTTON_SELECT_INPUT,366,7,27,14
+    PUSHBUTTON      "...",IDC_BUTTON_SELECT_OUTPUT,366,22,27,14
+    LTEXT           "",IDC_STATIC_INPUT,7,8,350,12,SS_ENDELLIPSIS | WS_BORDER
+    LTEXT           "",IDC_STATIC_OUTPUT,7,23,350,12,SS_ENDELLIPSIS | WS_BORDER
+    GROUPBOX        "Subtitle Time",IDC_STATIC_SUBTITLE_TIME,7,42,136,37
+    GROUPBOX        "Real Time",IDC_STATIC_REAL_TIME,146,42,136,37
+    LTEXT           "Start",IDC_STATIC_ST_START,16,53,17,8
+    EDITTEXT        IDC_EDIT_ST_START_HR,37,53,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ":",IDC_STATIC_ST_START_COLON_1,55,54,8,8
+    EDITTEXT        IDC_EDIT_ST_START_MIN,58,53,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ":",IDC_STATIC_ST_START_COLON_2,76,54,8,8
+    EDITTEXT        IDC_EDIT_ST_START_SEC,80,53,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ",",IDC_STATIC_ST_START_COMMA,98,54,8,8
+    EDITTEXT        IDC_EDIT_ST_START_MSEC,102,53,23,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "End",IDC_STATIC_ST_END,16,65,17,8
+    EDITTEXT        IDC_EDIT_ST_END_HR,37,65,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ":",IDC_STATIC_ST_END_COLON_1,55,65,8,8
+    EDITTEXT        IDC_EDIT_ST_END_MIN,58,65,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ":",IDC_STATIC_ST_END_COLON_2,76,65,8,8
+    EDITTEXT        IDC_EDIT_ST_END_SEC,80,65,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ",",IDC_STATIC_ST_END_COMMA,98,65,8,8
+    EDITTEXT        IDC_EDIT_ST_END_MSEC,102,65,23,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Start",IDC_STATIC_RT_START,155,53,17,8
+    EDITTEXT        IDC_EDIT_RT_START_HR,177,53,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ":",IDC_STATIC_RT_START_COLON_1,195,54,8,8
+    EDITTEXT        IDC_EDIT_RT_START_MIN,198,53,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ":",IDC_STATIC_RT_START_COLON_2,216,54,8,8
+    EDITTEXT        IDC_EDIT_RT_START_SEC,220,53,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ",",IDC_STATIC_RT_START_COMMA,238,54,8,8
+    EDITTEXT        IDC_EDIT_RT_START_MSEC,242,53,23,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "End",IDC_STATIC_RT_END,155,65,17,8
+    EDITTEXT        IDC_EDIT_RT_END_HR,177,65,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ":",IDC_STATIC_RT_END_COLON_1,195,65,8,8
+    EDITTEXT        IDC_EDIT_RT_END_MIN,198,65,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ":",IDC_STATIC_RT_END_COLON_2,216,65,8,8
+    EDITTEXT        IDC_EDIT_RT_END_SEC,220,65,17,10,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           ",",IDC_STATIC_RT_END_COMMA,238,65,8,8
+    EDITTEXT        IDC_EDIT_RT_END_MSEC,242,65,23,10,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Generate",IDC_BUTTON_GEN,290,65,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "The subtitle shifer will help make subtitles files for your movies/videos from srt files downloaded from seperate sources."
+            VALUE "CompanyName", "SMSKS"
+            VALUE "FileDescription", "SubTitleShifter"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SubTitleShifter.exe"
+            VALUE "LegalCopyright", "(c) SMSKS.  All rights reserved."
+            VALUE "OriginalFilename", "SubTitleShifter.exe"
+            VALUE "ProductName", "SubTitileShifter"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_SUBTITLESHIFTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About SubTitleShifter..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SubTitleShifter.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
