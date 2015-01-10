@@ -5,7 +5,7 @@
 #include "SubTitleShifter.h"
 #include "SubTitleShifterDlg.h"
 
-#include <highgui.h>
+//#include <highgui.h>
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
